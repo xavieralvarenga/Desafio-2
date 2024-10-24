@@ -1,14 +1,14 @@
-public abstract class Material {
-    protected String codigo;
+public class Material {
+    protected int id;
     protected String titulo;
 
-    public Material(int id, String s, String codigo, String titulo) {
-        this.codigo = codigo;
+    public Material(int id, String titulo) {
+        this.id = id;
         this.titulo = titulo;
     }
 
-    public String getCodigo() {
-        return codigo;
+    public int getCodigo() {
+        return id;
     }
 
     public String getTitulo() {
@@ -18,8 +18,5 @@ public abstract class Material {
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
-
-    // Método abstracto que será implementado en las subclases.
-    public abstract void mostrarInfo();
 }
 
